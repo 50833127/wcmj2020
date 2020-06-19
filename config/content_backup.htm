@@ -9,7 +9,24 @@
 <p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
 <p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
 <p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<h1>Develop</h1>
+<p></p>
+<h1>W6-W9</h1>
+<h4>Online education</h4>
+<p>線上直播: Youtube + Portable OBS</p>
+<p>線上開會:<span> </span><a href="https://meet.google.com/">https://meet.google.com</a> </p>
+<hr/>
+<h4>讓手機可以利用電腦熱點上網</h4>
+<p>採用 <a href="https://www.tp-link.com/us/home-networking/usb-adapter/tl-wn725n/">https://www.tp-link.com/us/home-networking/usb-adapter/tl-wn725n/</a></p>
+<p>將此一 USB Wifi adapter 連接電腦後, 若網路為 IPv4 協定時, 可以透過"設定 -&gt; 網路和網際網路 -&gt; 行動熱點", 選擇開啟並編輯"網路名稱與網路密碼"後, 讓至多 8 台手機透過熱點連線上網.</p>
+<p>但是因為目前 Windows 10 並<a href="https://answers.microsoft.com/en-us/windows/forum/all/support-ipv6-in-mobile-hotspot-network-sharing/8801ea57-c6dc-4c10-afe6-192879a85835">未提供 IPv6 網路協定下的網路熱點功能</a>, 因此在純 IPv6 網路協定下無法使用"行動熱點"服務.</p>
+<hr/>
+<p>利用手機鏡頭當作 webcam:</p>
+<p>Android:<span> </span><a href="https://www.digitalcitizen.life/turn-android-smartphone-webcam-windows">https://www.digitalcitizen.life/turn-android-smartphone-webcam-windows</a> <br/>iPhone:<span> </span><a href="https://www.makeuseof.com/tag/use-your-iphone-as-a-webcam-heres-how-ios/">https://www.makeuseof.com/tag/use-your-iphone-as-a-webcam-heres-how-</a><a href="https://www.makeuseof.com/tag/use-your-iphone-as-a-webcam-heres-how-ios/">ios/</a>  </p>
+<p></p>
+<h1>W13</h1>
+<p>利用 Windows 10 設定 -&gt; 選擇預設網頁瀏覽器, 使用 Google Chrome 作為預設瀏覽器.</p>
+<p>隨身程式系統必須安裝 <span>google-api-python-client 與 oauth2client</span><br/><br/>pip install google-api-python-client oauth2client<br/><br/>OAuth 2.0 client IDs 程式類別可以選擇 Desktop app<br/><br/>使用者完成 client_secrets.json 設定後, 必須將檔案存在倉儲目錄外部</p>
+<p>將 client_secrets.json 轉為 credential_token.dat 的程式:</p><h1>Develop</h1>
 <p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
 <p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
 <p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
