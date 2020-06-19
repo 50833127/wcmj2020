@@ -1,16 +1,6 @@
 <h1>About</h1>
-<p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
-<h4>利用 cmsimde 建立靜態網誌方法:</h4>
-<p>1. 在 github 建立倉儲, git clone 到近端</p>
-<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
-<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
-<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
-<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
-<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
-<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<p></p>
-<h1>W6-W9</h1>
+<p>這是５０８３３１２７的倉儲</p>
+<p></p><h1>W6-W9</h1>
 <h4>Online education</h4>
 <p>線上直播: Youtube + Portable OBS</p>
 <p>線上開會:<span> </span><a href="https://meet.google.com/">https://meet.google.com</a> </p>
@@ -22,8 +12,7 @@
 <hr/>
 <p>利用手機鏡頭當作 webcam:</p>
 <p>Android:<span> </span><a href="https://www.digitalcitizen.life/turn-android-smartphone-webcam-windows">https://www.digitalcitizen.life/turn-android-smartphone-webcam-windows</a> <br/>iPhone:<span> </span><a href="https://www.makeuseof.com/tag/use-your-iphone-as-a-webcam-heres-how-ios/">https://www.makeuseof.com/tag/use-your-iphone-as-a-webcam-heres-how-</a><a href="https://www.makeuseof.com/tag/use-your-iphone-as-a-webcam-heres-how-ios/">ios/</a>  </p>
-<p></p>
-<h4>W10 - W11</h4>
+<p></p><h2>W10 - W11</h2>
 <p>由於在電腦教室時採用純 IPv6 協定上網, 因此為了能夠在近端將倉儲改版資料推送到目前只接受 IPv4 協定連線的 github, 以下除了將原本以 https 對 github 連線, 改為以 ssh 協定連線外, 在 Windows 環境下必須利用 putty 與 plink, 設定 putty 格式的 .ppk 以及能夠同時支援 IPv4 與 IPv6 的代理主機.</p>
 <p>設定步驟如下:</p>
 <p>1. 下載 Putty 工具組</p>
@@ -132,7 +121,7 @@
 <p>隨身程式系統必須安裝 <span>google-api-python-client 與 oauth2client</span><br/><br/>pip install google-api-python-client oauth2client<br/><br/>OAuth 2.0 client IDs 程式類別可以選擇 Desktop app<br/><br/>使用者完成 client_secrets.json 設定後, 必須將檔案存在倉儲目錄外部</p>
 <p>將 client_secrets.json 轉為 credential_token.dat 的程式:</p>
 <p></p>
-<h4>Blogger API</h4>
+<h3>Blogger API</h3>
 <p>1. 這裡所指的 Blogger API 為:<span> </span><a href="https://developers.google.com/blogger/docs/3.0/using">https://developers.google.com/blogger/docs/3.0/using</a></p>
 <p>2. 將 CMSiMDE 中的 Pelican Blog 內容同步到 Google Blogger 的目的, 在讓網際內容管理系統中的網誌原始資料修改過程具備版次, 而且可同時將網誌出版在 Github Pages 與 Google Blogger 中, 讓網際內容的保存較具有永續性.</p>
 <p>3. Google Blogger 中的網誌系統各有獨立 ID, 這裡稱為 blog_id, 而網誌中的每一篇文章各有獨立 ID, 這裡稱為 post_id.</p>
